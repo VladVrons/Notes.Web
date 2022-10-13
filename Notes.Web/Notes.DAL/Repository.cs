@@ -1,7 +1,8 @@
-﻿
+﻿using System.Data.Entity;
 using Notes.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Notes.DAL.Model;
+using EntityState = System.Data.Entity.EntityState;
 
 namespace Notes.DAL
 {
@@ -30,16 +31,9 @@ namespace Notes.DAL
             Context.SaveChanges();
         }
 
-        public TDbModel Update(TDbModel model)
+        public void Update(TDbModel model)
         {
-            var toUpdate = Context.Set<TDbModel>().FirstOrDefault(m => m.Id == model.Id);
-            if (toUpdate != null)
-            {
-                toUpdate = model;
-            }
-            Context.Update(toUpdate);
-            Context.SaveChanges();
-            return toUpdate;
+            Context.Entry(model).State = EntityState.Modified;
         }
 
         public TDbModel Add(TDbModel model)
