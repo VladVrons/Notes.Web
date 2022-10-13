@@ -1,5 +1,4 @@
-﻿using System.Data.Entity;
-using Notes.DAL.Interfaces;
+﻿using Notes.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Notes.DAL.Model;
 using EntityState = System.Data.Entity.EntityState;
