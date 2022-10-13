@@ -2147,11 +2147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.Web\\Notes.Web.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.Web\\Notes.Web.csproj",
       "projectName": "Notes.Web",
-      "projectPath": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.Web\\Notes.Web.csproj",
+      "projectPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.Web\\Notes.Web.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.Web\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2168,8 +2168,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj": {
-              "projectPath": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj"
+            "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj": {
+              "projectPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj"
             }
           }
         }

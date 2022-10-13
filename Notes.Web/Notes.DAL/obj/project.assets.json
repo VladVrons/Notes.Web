@@ -2018,11 +2018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj",
       "projectName": "Notes.DAL",
-      "projectPath": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj",
+      "projectPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\source\\repos\\Notes.Web\\Notes.DAL\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

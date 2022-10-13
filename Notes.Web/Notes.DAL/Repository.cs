@@ -5,7 +5,7 @@ using Notes.DAL.Model;
 
 namespace Notes.DAL
 {
-    public class Repository<TDbModel> : IRepository<TDbModel>
+    public class Repository<TDbModel> : IRepository<TDbModel> where TDbModel : Note
     {
         private AppContext Context;
         public Repository(AppContext context)
@@ -15,17 +15,19 @@ namespace Notes.DAL
 
         public List<TDbModel> GetAll()
         {
-            throw new NotImplementedException();
+            return Context.Set<TDbModel>().ToList();
         }
 
         public TDbModel Get(Guid id)
         {
-            throw new NotImplementedException();
+            return Context.Set<TDbModel>().FirstOrDefault(m => m.Id == id);
         }
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            var toDelete = Context.Set<TDbModel>().FirstOrDefault(m => m.Id == id);
+            Context.Set<TDbModel>().Remove(toDelete);
+            Context.SaveChanges();
         }
 
         public TDbModel Update(TDbModel model)

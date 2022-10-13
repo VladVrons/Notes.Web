@@ -2,7 +2,7 @@
 
 namespace Notes.DAL.Interfaces
 {
-    public interface IRepository<TDbModel>
+    public interface IRepository<TDbModel> where TDbModel : class
     {
         public List<TDbModel> GetAll();
         public TDbModel Get(Guid id);
