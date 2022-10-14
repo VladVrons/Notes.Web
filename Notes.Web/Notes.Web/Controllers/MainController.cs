@@ -2,7 +2,7 @@
 using Notes.DAL.Interfaces;
 using Notes.DAL.Model;
 using Notes.Web.Interfaces;
-using System.Reflection.Metadata;
+using Notes.Web.Services;
 
 namespace Notes.Web.Controllers
 {
@@ -13,25 +13,25 @@ namespace Notes.Web.Controllers
         private IService TextService { get; set; }
         private IRepository<Note> Notes { get; set; }
 
-        public MainController(IService textService, IRepository<Note> note)
+        public MainController()
         {
-            TextService = textService;
-            Notes = note;
+            TextService = new TextService("localNote");
+            
         }
-        /*
+        
         [HttpGet]
         public JsonResult Get()
         {
-            return new JsonResult(Documents.GetAll());
+            TextService.SpellCheck();
+            return new JsonResult(TextService.Uow.Notes.GetAll());
         }
-
+        
         [HttpPost]
-        public JsonResult Post()
+        public JsonResult Posting(Guid id)
         {
-            RepairService.Work();
-            return new JsonResult("Work was successfully done");
+            return new JsonResult(TextService.Uow.Notes.Get(id));
         }
-
+        /*
         [HttpPut]
         public JsonResult Put(Document doc)
         {
