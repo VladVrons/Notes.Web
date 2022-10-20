@@ -1,9 +1,9 @@
-﻿using Notes.Web.Interfaces;
-using Notes.DAL.Interfaces;
+﻿using Notes.DAL.Interfaces;
 using Notes.DAL.Model;
 using Notes.DAL;
+using Notes.BLL.Interfaces;
 
-namespace Notes.Web.Services
+namespace Notes.BLL.Services
 {
     public class TextService : IService
     {

@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Notes.DAL.Interfaces;
-using Notes.DAL.Model;
-using Notes.Web.Interfaces;
-using Notes.Web.Services;
+using Notes.BLL.Interfaces;
+using Notes.BLL.Services;
 
 namespace Notes.Web.Controllers
 {
@@ -11,7 +9,7 @@ namespace Notes.Web.Controllers
     public class MainController : ControllerBase
     {
         private IService TextService { get; set; }
-        private IRepository<Note> Notes { get; set; }
+        
 
         public MainController()
         {

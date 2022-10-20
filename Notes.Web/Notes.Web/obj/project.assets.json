@@ -944,6 +944,19 @@
           }
         }
       },
+      "Notes.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Notes.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Notes.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notes.BLL.dll": {}
+        }
+      },
       "Notes.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2568,6 +2581,11 @@
         "version.txt"
       ]
     },
+    "Notes.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Notes.BLL/Notes.BLL.csproj",
+      "msbuildProject": "../Notes.BLL/Notes.BLL.csproj"
+    },
     "Notes.DAL/1.0.0": {
       "type": "project",
       "path": "../Notes.DAL/Notes.DAL.csproj",
@@ -2576,6 +2594,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Notes.BLL >= 1.0.0",
       "Notes.DAL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -2607,6 +2626,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.BLL\\Notes.BLL.csproj": {
+              "projectPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.BLL\\Notes.BLL.csproj"
+            },
             "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj": {
               "projectPath": "C:\\Users\\asus\\Documents\\GitHub\\Notes.Web\\Notes.Web\\Notes.DAL\\Notes.DAL.csproj"
             }

@@ -1,6 +1,6 @@
 ﻿using Notes.DAL;
 
-namespace Notes.Web.Interfaces
+namespace Notes.BLL.Interfaces
 {
     public interface IService
     {
